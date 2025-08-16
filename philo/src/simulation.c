@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 23:38:10 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/16 20:25:51 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/16 21:20:06 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,12 @@ static int	check_meal_completion(t_data *data)
 
 static int	simulation_should_end(t_data *data)
 {
+	int	end;
+
 	pthread_mutex_lock(&data->data_mutex);
-	if (data->simulation_end)
-	{
-		pthread_mutex_unlock(&data->data_mutex);
-		return (1);
-	}
+	end = data->simulation_end;
 	pthread_mutex_unlock(&data->data_mutex);
-	return (0);
+	return (end);
 }
 
 void	*philosopher_routine(void *arg)

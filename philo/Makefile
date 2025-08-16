@@ -5,6 +5,7 @@ SRC = ./src/philo.c \
 	./src/actions.c \
 	./src/check_funcs.c \
 	./src/cleanup.c \
+	./src/dead.c \
 	./src/init.c \
 	./src/parsing.c \
 	./src/simulation.c \
