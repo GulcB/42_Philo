@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 23:01:32 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/17 10:27:56 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/18 21:57:48 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,14 +64,18 @@ typedef struct s_data
 	t_philo				*philos;
 }						t_data;
 
-int		get_args(int argc, char **argv, t_data *data);
 int		ft_atoi(const char *str);
 int		is_digit_str(const char *str);
+int		get_args(int argc, char **argv, t_data *data);
+
+int		check_meal_completion(t_data *data);
+void	check_simulation(t_data *data);
 
 int		init_data(t_data *data);
 int		init_philos(t_data *data);
 int		init_mutexes(t_data *data);
 
+int		simulation_should_end(t_data *data);
 void	*philosopher_life(void *arg);
 int		run_simulation(t_data *data);
 

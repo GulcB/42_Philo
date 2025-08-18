@@ -2,13 +2,14 @@ NAME = philo
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -pthread 
 SRC = ./philo.c \
-	./life_cycle.c \
-	./utils.c \
+	./arg_ctrl.c \
+	./check.c \
 	./cleanup.c \
 	./dead.c \
 	./init.c \
-	./arg_ctrl.c \
+	./life_cycle.c \
 	./sim_engine.c \
+	./utils.c \
 	./write_fd.c
 
 all: ${NAME}
