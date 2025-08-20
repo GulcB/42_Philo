@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 23:23:02 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/17 10:51:59 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/20 16:00:42 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_usleep(long time_in_ms)
 		current_time = get_time();
 		if ((current_time - start_time) >= time_in_ms)
 			break ;
-		usleep(50);
+		usleep(60);
 	}
 }
 

@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/18 21:18:03 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/18 21:18:53 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/20 16:00:23 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ void	check_simulation(t_data *data)
 			break ;
 		if (check_meal_completion(data))
 			break ;
-		usleep(1000);
+		usleep(500);
 	}
 }

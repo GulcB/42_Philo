@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 23:38:10 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/18 21:57:33 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/20 15:42:05 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void	join_threads_safely(t_data *data)
 {
 	int	i;
 
-	usleep(5000);
+	usleep(500);
 	i = 0;
 	while (i < data->num_philos)
 	{

@@ -6,7 +6,7 @@
 /*   By: gbodur <gbodur@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 23:01:32 by gbodur            #+#    #+#             */
-/*   Updated: 2025/08/18 21:57:48 by gbodur           ###   ########.fr       */
+/*   Updated: 2025/08/20 16:29:11 by gbodur           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,12 @@
 # include <unistd.h>
 # include <pthread.h>
 # include <sys/time.h>
-# include <string.h>
 
 # define TAKING_FORK "has taken a fork"
 # define EATING "is eating"
 # define SLEEPING "is sleeping"
 # define THINKING "is thinking"
 # define DIED "died"
-
-# define RED "\033[0;31m"
-# define GREEN "\033[0;32m"
-# define YELLOW "\033[0;33m"
-# define BLUE "\033[0;34m"
-# define RESET "\033[0m"
 
 # define ERR_ARGS "Usage: ./philo number_of_philosophers time_to_die \
 	time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]"
